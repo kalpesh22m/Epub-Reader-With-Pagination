@@ -82,7 +82,7 @@
     float pageOffset = page * webView.bounds.size.width;
     [webView.scrollView setContentOffset:CGPointMake(pageOffset, 0) animated:NO];;
     pageCountlbl.text=[NSString stringWithFormat:@"Page %d/%d",page+1,_pageCount];
-    [pageSlider setValue:pageOffset+1];
+    [pageSlider setValue:page+1];
 }
 
 #pragma mark Page Slider Value Changed
