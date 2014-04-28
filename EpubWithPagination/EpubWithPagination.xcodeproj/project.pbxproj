@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C7E7FE54190E3986001A6961 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7E7FE53190E3986001A6961 /* Foundation.framework */; };
+		C7E7FE56190E3986001A6961 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7E7FE55190E3986001A6961 /* CoreGraphics.framework */; };
+		C7E7FE58190E3986001A6961 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7E7FE57190E3986001A6961 /* UIKit.framework */; };
+		C7E7FE5E190E3986001A6961 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C7E7FE5C190E3986001A6961 /* InfoPlist.strings */; };
+		C7E7FE60190E3986001A6961 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E7FE5F190E3986001A6961 /* main.m */; };
+		C7E7FE64190E3986001A6961 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E7FE63190E3986001A6961 /* AppDelegate.m */; };
+		C7E7FE67190E3986001A6961 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7E7FE65190E3986001A6961 /* Main.storyboard */; };
+		C7E7FE6A190E3986001A6961 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E7FE69190E3986001A6961 /* ViewController.m */; };
+		C7E7FE6C190E3986001A6961 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7E7FE6B190E3986001A6961 /* Images.xcassets */; };
+		C7E7FE73190E3986001A6961 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7E7FE72190E3986001A6961 /* XCTest.framework */; };
+		C7E7FE74190E3986001A6961 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7E7FE53190E3986001A6961 /* Foundation.framework */; };
+		C7E7FE75190E3986001A6961 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7E7FE57190E3986001A6961 /* UIKit.framework */; };
+		C7E7FE7D190E3986001A6961 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C7E7FE7B190E3986001A6961 /* InfoPlist.strings */; };
+		C7E7FE7F190E3986001A6961 /* EpubWithPaginationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E7FE7E190E3986001A6961 /* EpubWithPaginationTests.m */; };
+		C7E7FE92190E39DE001A6961 /* XMLHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E7FE8E190E39DE001A6961 /* XMLHandler.m */; };
+		C7E7FE93190E39DE001A6961 /* ZipArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = C7E7FE90190E39DE001A6961 /* ZipArchive.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C7E7FE9E190E3A00001A6961 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = C7E7FE96190E3A00001A6961 /* ioapi.c */; };
+		C7E7FE9F190E3A00001A6961 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = C7E7FE98190E3A00001A6961 /* mztools.c */; };
+		C7E7FEA0190E3A00001A6961 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = C7E7FE9A190E3A00001A6961 /* unzip.c */; };
+		C7E7FEA1190E3A00001A6961 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = C7E7FE9C190E3A00001A6961 /* zip.c */; };
+		C7E7FEA3190E3AB1001A6961 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C7E7FEA2190E3AB1001A6961 /* libz.dylib */; };
+		C7E7FEA5190E3E9A001A6961 /* tolstoy-war-and-peace.epub in Resources */ = {isa = PBXBuildFile; fileRef = C7E7FEA4190E3E9A001A6961 /* tolstoy-war-and-peace.epub */; };
+		C7E7FEA8190E3ED5001A6961 /* EpubContent.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E7FEA7190E3ED5001A6961 /* EpubContent.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C7E7FE76190E3986001A6961 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7E7FE48190E3986001A6961 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C7E7FE4F190E3986001A6961;
+			remoteInfo = EpubWithPagination;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C7E7FE50190E3986001A6961 /* EpubWithPagination.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EpubWithPagination.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7E7FE53190E3986001A6961 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C7E7FE55190E3986001A6961 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C7E7FE57190E3986001A6961 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C7E7FE5B190E3986001A6961 /* EpubWithPagination-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EpubWithPagination-Info.plist"; sourceTree = "<group>"; };
+		C7E7FE5D190E3986001A6961 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C7E7FE5F190E3986001A6961 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C7E7FE61190E3986001A6961 /* EpubWithPagination-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EpubWithPagination-Prefix.pch"; sourceTree = "<group>"; };
+		C7E7FE62190E3986001A6961 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C7E7FE63190E3986001A6961 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C7E7FE66190E3986001A6961 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C7E7FE68190E3986001A6961 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C7E7FE69190E3986001A6961 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C7E7FE6B190E3986001A6961 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C7E7FE71190E3986001A6961 /* EpubWithPaginationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EpubWithPaginationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7E7FE72190E3986001A6961 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C7E7FE7A190E3986001A6961 /* EpubWithPaginationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EpubWithPaginationTests-Info.plist"; sourceTree = "<group>"; };
+		C7E7FE7C190E3986001A6961 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C7E7FE7E190E3986001A6961 /* EpubWithPaginationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EpubWithPaginationTests.m; sourceTree = "<group>"; };
+		C7E7FE8D190E39DE001A6961 /* XMLHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLHandler.h; sourceTree = "<group>"; };
+		C7E7FE8E190E39DE001A6961 /* XMLHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLHandler.m; sourceTree = "<group>"; };
+		C7E7FE8F190E39DE001A6961 /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
+		C7E7FE90190E39DE001A6961 /* ZipArchive.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZipArchive.mm; sourceTree = "<group>"; };
+		C7E7FE95190E3A00001A6961 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		C7E7FE96190E3A00001A6961 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		C7E7FE97190E3A00001A6961 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		C7E7FE98190E3A00001A6961 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		C7E7FE99190E3A00001A6961 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		C7E7FE9A190E3A00001A6961 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		C7E7FE9B190E3A00001A6961 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		C7E7FE9C190E3A00001A6961 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		C7E7FE9D190E3A00001A6961 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		C7E7FEA2190E3AB1001A6961 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		C7E7FEA4190E3E9A001A6961 /* tolstoy-war-and-peace.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "tolstoy-war-and-peace.epub"; sourceTree = "<group>"; };
+		C7E7FEA6190E3ED5001A6961 /* EpubContent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EpubContent.h; sourceTree = "<group>"; };
+		C7E7FEA7190E3ED5001A6961 /* EpubContent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EpubContent.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C7E7FE4D190E3986001A6961 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7E7FE56190E3986001A6961 /* CoreGraphics.framework in Frameworks */,
+				C7E7FEA3190E3AB1001A6961 /* libz.dylib in Frameworks */,
+				C7E7FE58190E3986001A6961 /* UIKit.framework in Frameworks */,
+				C7E7FE54190E3986001A6961 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7E7FE6E190E3986001A6961 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7E7FE73190E3986001A6961 /* XCTest.framework in Frameworks */,
+				C7E7FE75190E3986001A6961 /* UIKit.framework in Frameworks */,
+				C7E7FE74190E3986001A6961 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C7E7FE47190E3986001A6961 = {
+			isa = PBXGroup;
+			children = (
+				C7E7FE59190E3986001A6961 /* EpubWithPagination */,
+				C7E7FE78190E3986001A6961 /* EpubWithPaginationTests */,
+				C7E7FE52190E3986001A6961 /* Frameworks */,
+				C7E7FE51190E3986001A6961 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C7E7FE51190E3986001A6961 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C7E7FE50190E3986001A6961 /* EpubWithPagination.app */,
+				C7E7FE71190E3986001A6961 /* EpubWithPaginationTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C7E7FE52190E3986001A6961 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7E7FEA2190E3AB1001A6961 /* libz.dylib */,
+				C7E7FE53190E3986001A6961 /* Foundation.framework */,
+				C7E7FE55190E3986001A6961 /* CoreGraphics.framework */,
+				C7E7FE57190E3986001A6961 /* UIKit.framework */,
+				C7E7FE72190E3986001A6961 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C7E7FE59190E3986001A6961 /* EpubWithPagination */ = {
+			isa = PBXGroup;
+			children = (
+				C7E7FE8A190E39D1001A6961 /* EpubHandler */,
+				C7E7FE62190E3986001A6961 /* AppDelegate.h */,
+				C7E7FE63190E3986001A6961 /* AppDelegate.m */,
+				C7E7FE65190E3986001A6961 /* Main.storyboard */,
+				C7E7FE68190E3986001A6961 /* ViewController.h */,
+				C7E7FE69190E3986001A6961 /* ViewController.m */,
+				C7E7FEA4190E3E9A001A6961 /* tolstoy-war-and-peace.epub */,
+				C7E7FE6B190E3986001A6961 /* Images.xcassets */,
+				C7E7FE5A190E3986001A6961 /* Supporting Files */,
+			);
+			path = EpubWithPagination;
+			sourceTree = "<group>";
+		};
+		C7E7FE5A190E3986001A6961 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C7E7FE5B190E3986001A6961 /* EpubWithPagination-Info.plist */,
+				C7E7FE5C190E3986001A6961 /* InfoPlist.strings */,
+				C7E7FE5F190E3986001A6961 /* main.m */,
+				C7E7FE61190E3986001A6961 /* EpubWithPagination-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C7E7FE78190E3986001A6961 /* EpubWithPaginationTests */ = {
+			isa = PBXGroup;
+			children = (
+				C7E7FE7E190E3986001A6961 /* EpubWithPaginationTests.m */,
+				C7E7FE79190E3986001A6961 /* Supporting Files */,
+			);
+			path = EpubWithPaginationTests;
+			sourceTree = "<group>";
+		};
+		C7E7FE79190E3986001A6961 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C7E7FE7A190E3986001A6961 /* EpubWithPaginationTests-Info.plist */,
+				C7E7FE7B190E3986001A6961 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C7E7FE8A190E39D1001A6961 /* EpubHandler */ = {
+			isa = PBXGroup;
+			children = (
+				C7E7FE94190E3A00001A6961 /* minizip */,
+				C7E7FE8D190E39DE001A6961 /* XMLHandler.h */,
+				C7E7FE8E190E39DE001A6961 /* XMLHandler.m */,
+				C7E7FEA6190E3ED5001A6961 /* EpubContent.h */,
+				C7E7FEA7190E3ED5001A6961 /* EpubContent.m */,
+				C7E7FE8F190E39DE001A6961 /* ZipArchive.h */,
+				C7E7FE90190E39DE001A6961 /* ZipArchive.mm */,
+			);
+			path = EpubHandler;
+			sourceTree = "<group>";
+		};
+		C7E7FE94190E3A00001A6961 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				C7E7FE95190E3A00001A6961 /* crypt.h */,
+				C7E7FE96190E3A00001A6961 /* ioapi.c */,
+				C7E7FE97190E3A00001A6961 /* ioapi.h */,
+				C7E7FE98190E3A00001A6961 /* mztools.c */,
+				C7E7FE99190E3A00001A6961 /* mztools.h */,
+				C7E7FE9A190E3A00001A6961 /* unzip.c */,
+				C7E7FE9B190E3A00001A6961 /* unzip.h */,
+				C7E7FE9C190E3A00001A6961 /* zip.c */,
+				C7E7FE9D190E3A00001A6961 /* zip.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C7E7FE4F190E3986001A6961 /* EpubWithPagination */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7E7FE82190E3986001A6961 /* Build configuration list for PBXNativeTarget "EpubWithPagination" */;
+			buildPhases = (
+				C7E7FE4C190E3986001A6961 /* Sources */,
+				C7E7FE4D190E3986001A6961 /* Frameworks */,
+				C7E7FE4E190E3986001A6961 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EpubWithPagination;
+			productName = EpubWithPagination;
+			productReference = C7E7FE50190E3986001A6961 /* EpubWithPagination.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C7E7FE70190E3986001A6961 /* EpubWithPaginationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7E7FE85190E3986001A6961 /* Build configuration list for PBXNativeTarget "EpubWithPaginationTests" */;
+			buildPhases = (
+				C7E7FE6D190E3986001A6961 /* Sources */,
+				C7E7FE6E190E3986001A6961 /* Frameworks */,
+				C7E7FE6F190E3986001A6961 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C7E7FE77190E3986001A6961 /* PBXTargetDependency */,
+			);
+			name = EpubWithPaginationTests;
+			productName = EpubWithPaginationTests;
+			productReference = C7E7FE71190E3986001A6961 /* EpubWithPaginationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C7E7FE48190E3986001A6961 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = xyz;
+				TargetAttributes = {
+					C7E7FE70190E3986001A6961 = {
+						TestTargetID = C7E7FE4F190E3986001A6961;
+					};
+				};
+			};
+			buildConfigurationList = C7E7FE4B190E3986001A6961 /* Build configuration list for PBXProject "EpubWithPagination" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C7E7FE47190E3986001A6961;
+			productRefGroup = C7E7FE51190E3986001A6961 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C7E7FE4F190E3986001A6961 /* EpubWithPagination */,
+				C7E7FE70190E3986001A6961 /* EpubWithPaginationTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C7E7FE4E190E3986001A6961 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7E7FEA5190E3E9A001A6961 /* tolstoy-war-and-peace.epub in Resources */,
+				C7E7FE6C190E3986001A6961 /* Images.xcassets in Resources */,
+				C7E7FE5E190E3986001A6961 /* InfoPlist.strings in Resources */,
+				C7E7FE67190E3986001A6961 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7E7FE6F190E3986001A6961 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7E7FE7D190E3986001A6961 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C7E7FE4C190E3986001A6961 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7E7FEA0190E3A00001A6961 /* unzip.c in Sources */,
+				C7E7FE6A190E3986001A6961 /* ViewController.m in Sources */,
+				C7E7FE64190E3986001A6961 /* AppDelegate.m in Sources */,
+				C7E7FEA1190E3A00001A6961 /* zip.c in Sources */,
+				C7E7FE9F190E3A00001A6961 /* mztools.c in Sources */,
+				C7E7FEA8190E3ED5001A6961 /* EpubContent.m in Sources */,
+				C7E7FE60190E3986001A6961 /* main.m in Sources */,
+				C7E7FE92190E39DE001A6961 /* XMLHandler.m in Sources */,
+				C7E7FE93190E39DE001A6961 /* ZipArchive.mm in Sources */,
+				C7E7FE9E190E3A00001A6961 /* ioapi.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C7E7FE6D190E3986001A6961 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7E7FE7F190E3986001A6961 /* EpubWithPaginationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C7E7FE77190E3986001A6961 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C7E7FE4F190E3986001A6961 /* EpubWithPagination */;
+			targetProxy = C7E7FE76190E3986001A6961 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C7E7FE5C190E3986001A6961 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7E7FE5D190E3986001A6961 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C7E7FE65190E3986001A6961 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7E7FE66190E3986001A6961 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C7E7FE7B190E3986001A6961 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7E7FE7C190E3986001A6961 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C7E7FE80190E3986001A6961 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C7E7FE81190E3986001A6961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C7E7FE83190E3986001A6961 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EpubWithPagination/EpubWithPagination-Prefix.pch";
+				INFOPLIST_FILE = "EpubWithPagination/EpubWithPagination-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C7E7FE84190E3986001A6961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EpubWithPagination/EpubWithPagination-Prefix.pch";
+				INFOPLIST_FILE = "EpubWithPagination/EpubWithPagination-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C7E7FE86190E3986001A6961 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EpubWithPagination.app/EpubWithPagination";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EpubWithPagination/EpubWithPagination-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "EpubWithPaginationTests/EpubWithPaginationTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C7E7FE87190E3986001A6961 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/EpubWithPagination.app/EpubWithPagination";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EpubWithPagination/EpubWithPagination-Prefix.pch";
+				INFOPLIST_FILE = "EpubWithPaginationTests/EpubWithPaginationTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C7E7FE4B190E3986001A6961 /* Build configuration list for PBXProject "EpubWithPagination" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7E7FE80190E3986001A6961 /* Debug */,
+				C7E7FE81190E3986001A6961 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7E7FE82190E3986001A6961 /* Build configuration list for PBXNativeTarget "EpubWithPagination" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7E7FE83190E3986001A6961 /* Debug */,
+				C7E7FE84190E3986001A6961 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C7E7FE85190E3986001A6961 /* Build configuration list for PBXNativeTarget "EpubWithPaginationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7E7FE86190E3986001A6961 /* Debug */,
+				C7E7FE87190E3986001A6961 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C7E7FE48190E3986001A6961 /* Project object */;
+}
