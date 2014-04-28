@@ -14,7 +14,7 @@
 {
     __weak IBOutlet UILabel *pageCountlbl;
    __weak  IBOutlet UIWebView *webView;
-
+    __weak IBOutlet UISlider *pageSlider;
     XMLHandler *_xmlHandler;
 	EpubContent *_ePubContent;
 	NSString *_pagesPath;
@@ -30,5 +30,5 @@
 
 
 -(IBAction)fontchangeBtnClicked:(id)sender;
-
+-(IBAction)pageSliderValueChanged:(id)sender;
 @end

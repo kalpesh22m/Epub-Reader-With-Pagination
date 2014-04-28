@@ -82,9 +82,26 @@
     float pageOffset = page * webView.bounds.size.width;
     [webView.scrollView setContentOffset:CGPointMake(pageOffset, 0) animated:NO];;
     pageCountlbl.text=[NSString stringWithFormat:@"Page %d/%d",page+1,_pageCount];
-    
+    [pageSlider setValue:pageOffset+1];
 }
 
+#pragma mark Page Slider Value Changed
+-(IBAction)pageNoChange:(id)sender
+{
+    int page=pageSlider.value;
+    pageCountlbl.text=[NSString stringWithFormat:@"Page %d/%d",page,_pageCount];
+
+}
+-(IBAction)pageSliderValueChanged:(id)sender
+{
+    int page=pageSlider.value;
+    pageCountlbl.text=[NSString stringWithFormat:@"Page %d/%d",page,_pageCount];
+
+    page=page-1;
+
+    [webView.scrollView setContentOffset:CGPointMake(page*webView.bounds.size.width, 0) animated:NO];;
+
+}
 
 #pragma mark UIWebview Delgate
 -(void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
@@ -95,11 +112,23 @@
     NSString *jsString = [[NSString alloc] initWithFormat:@"document.getElementsByTagName('body')[0].style.webkitTextSizeAdjust= '%d%%'",
                           textFontSize];
     [webView stringByEvaluatingJavaScriptFromString:jsString];
-    _pageCount =  webView.pageCount;;
+    _pageCount =  webView.pageCount;
+  
     _currentPageIndex=0;
     if (!isFromFontChange) {
+        if (_pageCount==1) {
+            pageSlider.hidden=YES;
+        }
+        else
+        {
+            pageSlider.hidden=NO;
+
+        }
         pageCountlbl.text=[NSString stringWithFormat:@"Page %d/%d",_currentPageIndex+1,_pageCount];
-        
+        pageSlider.minimumValue=1;
+        pageSlider.maximumValue=_pageCount;
+        [pageSlider setValue:1];
+
     }
     
 }
@@ -123,7 +152,7 @@
 {
         CGFloat   pageWidth   = scrollView.frame.size.width;
         _currentPageIndex = ceil(scrollView.contentOffset.x / pageWidth);
-        
+    [pageSlider setValue:_currentPageIndex+1];
         CGPoint touchEndPoint = scrollView.contentOffset;
         BOOL  _next = self.touchBeginPoint.x > touchEndPoint.x + 5;
         
