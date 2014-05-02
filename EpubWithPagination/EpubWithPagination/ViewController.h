@@ -13,8 +13,9 @@
 @interface ViewController : UIViewController<XMLHandlerDelegate,UIWebViewDelegate,UIScrollViewDelegate>
 {
     __weak IBOutlet UILabel *pageCountlbl;
-   __weak  IBOutlet UIWebView *webView;
     __weak IBOutlet UISlider *pageSlider;
+    
+    
     XMLHandler *_xmlHandler;
 	EpubContent *_ePubContent;
 	NSString *_pagesPath;
@@ -22,6 +23,8 @@
 	NSString *_strFileName;
 	int _pageNumber;
     int  _currentPageIndex;
+    
+    NSMutableString *mutableString;
 
 }
 @property (nonatomic, retain)EpubContent *_ePubContent;

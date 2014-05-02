@@ -12,6 +12,7 @@
 {
     NSUInteger textFontSize;
     BOOL isFromFontChange;
+    UIWebView *webView;
 
 }
 @property (assign, nonatomic) CGPoint touchBeginPoint;
@@ -30,9 +31,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    textFontSize=100;
+    textFontSize=150;
+    mutableString=[[NSMutableString alloc]init];
 	// Do any additional setup after loading the view, typically from a nib.
     _strFileName=@"tolstoy-war-and-peace";
+    webView=[[UIWebView alloc]initWithFrame:CGRectMake(0, 106, 320, 360)];
+    webView.delegate=self;
     webView.paginationMode = UIWebPaginationModeLeftToRight;
     webView.paginationBreakingMode = UIWebPaginationBreakingModePage;
     webView.scrollView.pagingEnabled = YES;
@@ -43,6 +47,9 @@
     webView.scrollView.bounces = YES;
     webView.scrollView.showsVerticalScrollIndicator = NO;
     webView.scrollView.showsHorizontalScrollIndicator = NO;
+    [self.view addSubview:webView];
+    //webView.gapBetweenPages=5;
+
     
     //First unzip the epub file to documents directory
 	[self unzipAndSaveFile];
@@ -66,10 +73,10 @@
 {
     switch ([sender tag]) {
         case 1: // A-
-            textFontSize = (textFontSize > 100) ? textFontSize -5 : textFontSize;
+            textFontSize = (textFontSize > 70) ? textFontSize -3 : textFontSize;
             break;
         case 2: // A+
-            textFontSize = (textFontSize < 250) ? textFontSize +5 : textFontSize;
+            textFontSize = (textFontSize < 300) ? textFontSize +3 : textFontSize;
             break;
     }
     isFromFontChange=YES;
@@ -77,8 +84,8 @@
     
     NSString *jsString = [[NSString alloc] initWithFormat:@"document.getElementsByTagName('body')[0].style.webkitTextSizeAdjust= '%d%%'",
                           textFontSize];
-    [webView stringByEvaluatingJavaScriptFromString:jsString];
-    [webView reload];
+   [webView stringByEvaluatingJavaScriptFromString:jsString];
+   [webView reload];
     float pageOffset = page * webView.bounds.size.width;
     [webView.scrollView setContentOffset:CGPointMake(pageOffset, 0) animated:NO];;
     pageCountlbl.text=[NSString stringWithFormat:@"Page %d/%d",page+1,_pageCount];
@@ -113,7 +120,8 @@
                           textFontSize];
     [webView stringByEvaluatingJavaScriptFromString:jsString];
     _pageCount =  webView.pageCount;
-  
+    pageSlider.maximumValue=_pageCount;
+
     _currentPageIndex=0;
     if (!isFromFontChange) {
         if (_pageCount==1) {
@@ -131,8 +139,11 @@
 
     }
     
+    NSString *yourHTMLSourceCodeString = [webView stringByEvaluatingJavaScriptFromString:@"document.documentElement.outerHTML"];
+    NSLog(@"Length is %d",[yourHTMLSourceCodeString length]);
+
 }
-    
+
 #pragma mark - ScrollView Delegate Method
 - (void)gotoPage:(int)pageIndex
 {
@@ -178,7 +189,7 @@
                 if ([self._ePubContent._spine count]-1>_pageNumber) {
                     
                     _pageNumber++;
-                    [self loadPage];
+                   [self loadPage];
                 }
                 
             }

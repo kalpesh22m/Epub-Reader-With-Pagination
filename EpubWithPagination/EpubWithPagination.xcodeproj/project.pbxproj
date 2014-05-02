@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C757C547190E64BA00134C82 /* childrens-literature-20130206.epub in Resources */ = {isa = PBXBuildFile; fileRef = C757C546190E64BA00134C82 /* childrens-literature-20130206.epub */; };
 		C7E7FE54190E3986001A6961 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7E7FE53190E3986001A6961 /* Foundation.framework */; };
 		C7E7FE56190E3986001A6961 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7E7FE55190E3986001A6961 /* CoreGraphics.framework */; };
 		C7E7FE58190E3986001A6961 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7E7FE57190E3986001A6961 /* UIKit.framework */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C757C546190E64BA00134C82 /* childrens-literature-20130206.epub */ = {isa = PBXFileReference; lastKnownFileType = file; path = "childrens-literature-20130206.epub"; sourceTree = "<group>"; };
 		C7E7FE50190E3986001A6961 /* EpubWithPagination.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EpubWithPagination.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7E7FE53190E3986001A6961 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C7E7FE55190E3986001A6961 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -147,6 +149,7 @@
 				C7E7FE68190E3986001A6961 /* ViewController.h */,
 				C7E7FE69190E3986001A6961 /* ViewController.m */,
 				C7E7FEA4190E3E9A001A6961 /* tolstoy-war-and-peace.epub */,
+				C757C546190E64BA00134C82 /* childrens-literature-20130206.epub */,
 				C7E7FE6B190E3986001A6961 /* Images.xcassets */,
 				C7E7FE5A190E3986001A6961 /* Supporting Files */,
 			);
@@ -292,6 +295,7 @@
 				C7E7FE6C190E3986001A6961 /* Images.xcassets in Resources */,
 				C7E7FE5E190E3986001A6961 /* InfoPlist.strings in Resources */,
 				C7E7FE67190E3986001A6961 /* Main.storyboard in Resources */,
+				C757C547190E64BA00134C82 /* childrens-literature-20130206.epub in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,10 +448,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: LAKINDRA BIRGUNDA (6BV4L6BY65)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EpubWithPagination/EpubWithPagination-Prefix.pch";
 				INFOPLIST_FILE = "EpubWithPagination/EpubWithPagination-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "90E6BCC1-0EC9-4272-842F-7D431E952057";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -457,10 +463,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: LAKINDRA BIRGUNDA (6BV4L6BY65)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EpubWithPagination/EpubWithPagination-Prefix.pch";
 				INFOPLIST_FILE = "EpubWithPagination/EpubWithPagination-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "90E6BCC1-0EC9-4272-842F-7D431E952057";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -524,6 +532,7 @@
 				C7E7FE84190E3986001A6961 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C7E7FE85190E3986001A6961 /* Build configuration list for PBXNativeTarget "EpubWithPaginationTests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +541,7 @@
 				C7E7FE87190E3986001A6961 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

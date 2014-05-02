@@ -12,14 +12,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" id="u9G-C0-OjB">
-                                <rect key="frame" x="0.0" y="106" width="320" height="462"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="Viw-dV-jeI"/>
-                                </connections>
-                            </webView>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TqD-IG-Vfw">
                                 <rect key="frame" x="-8" y="37" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -61,7 +53,6 @@
                     <connections>
                         <outlet property="pageCountlbl" destination="SbI-wM-OlX" id="mSn-xc-gBC"/>
                         <outlet property="pageSlider" destination="GWN-jV-RcB" id="5Ss-x4-Oe1"/>
-                        <outlet property="webView" destination="u9G-C0-OjB" id="TR5-62-XWv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
